@@ -1,0 +1,154 @@
+<script src="beat.js"></script>
+<style>
+    table{
+        border: 1px solid #444444;
+        float: left;
+    }
+    .life {
+        height: 11px;
+    }
+    .cb {
+        clear: both;
+    }
+    .col{
+        width: 20px; height: 10px; text-align: center;
+    }
+    .pressed {
+        background-color:cyan;
+        transform: scale(1.2);
+    }
+    .scan .col{
+        background-color:antiquewhite;
+    }
+    div.note{
+        width: 20px; height: 10px; background-color:lightblue;
+    }
+</style>
+<div>리듬!!</div>
+<div>
+    <div>점수 : <span id="result">-</span></div>
+</div>
+<div>
+    <table>
+        <tr class="row row1">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row2">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row3">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row4">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row5">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row6">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row7">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row8">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row9">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row10">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row11 scan">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row12">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+        <tr class="row row13">
+            <td class="col col1"></td>
+            <td class="col col2"></td>
+            <td class="col col3"></td>
+            <td class="col col4"></td>
+            <td class="col col5"></td>
+            <td class="col col6"></td>
+        </tr>
+    </table>
+    <div>
+        <div class="life" id="life10">□</div>
+        <div class="life" id="life9">□</div>
+        <div class="life" id="life8">□</div>
+        <div class="life" id="life7">□</div>
+        <div class="life" id="life6">□</div>
+        <div class="life" id="life5">■</div>
+        <div class="life" id="life4">■</div>
+        <div class="life" id="life3">■</div>
+        <div class="life" id="life2">■</div>
+        <div class="life" id="life1">■</div>
+    </div>
+</div>
+<div class="cb"></div>
+<div>
+    <button id="startBtn">시작</button>
+</div>

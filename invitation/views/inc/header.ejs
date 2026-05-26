@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="link.jpg">
+    <meta name="description" content="드디어 결혼합니다. 구경해보세요!">
+    <meta property="og:description" content="드디어 결혼합니다. 구경해보세요!">
+  
+    <title>박지웅❤️이가람의 청첩장</title>
+    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
+    <script>
+        function copy(obj) {
+            var text = obj.previousElementSibling.innerHTML;
+            var textarea = document.createElement('textarea');
+            document.body.appendChild(textarea);
+            textarea.value = text;
+            textarea.select();
+            try {
+                textarea.setSelectionRange(0, 99999);
+                var successful = document.execCommand('copy');
+                if (successful) {
+                    alert('복사했습니다.');
+                }
+            } catch (err) {
+                console.error('복사 도중 오류 발생:', err);
+            } finally {
+                textarea.setSelectionRange(0, 0);
+                document.body.removeChild(textarea);
+            }
+        }
+    </script>
+</head>
+<body>

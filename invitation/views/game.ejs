@@ -1,0 +1,32 @@
+<%-include('./inc/header.ejs') %>
+
+<link rel="stylesheet" href="styles.css">
+<script src="//cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/grid-engine@2.44.0/dist/GridEngine.min.js"></script>
+<script src="main.js"></script>
+
+<div id="wrapper">
+    <div id="game"></div>
+    <div id="text-output"></div>
+</div>
+<div class="overlay" id="popup_photo">
+    <div class="popup">
+        <div class="close-btn" onclick="closePopup('popup_photo');"></div>
+        <div class="content_image">
+        </div>
+    </div>
+</div>
+<div class="overlay" id="popup_html">
+    <div class="popup">
+        <div class="close-btn" onclick="closePopup('popup_html');"></div>
+        <div class="content">
+        </div>
+    </div>
+</div>
+<script>
+    function closePopup(name) {
+        document.getElementById(name).style.display = 'none';
+    }
+</script>
+
+<%-include('./inc/footer.ejs') %>

@@ -1,0 +1,108 @@
+<%-include('./inc/header.ejs') %>
+<style>
+    body {
+        font-size: 18px;
+        font-family: 'NanumSquareRound';
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        /*color: #6E7E5B;*/
+    }
+
+    .text {
+        margin: 15px;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block; /* Remove default inline-block spacing */
+        margin: 0 auto; /* Center the image */
+    }
+
+    h1 {
+        color: #333;
+        font-size: 25px;
+    }
+
+    .h1h1 {
+        font-size: 20px; 
+        color:hotpink;
+    }
+
+    address {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-style: normal;
+    }
+
+    section {
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        color: hotpink;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+</style>
+
+<div class="container">
+    <img src="location.png" alt="약도">
+    <div class="text">
+        <h1>그랜드모먼트</h1>
+        <h1 class="h1h1">2024년 4월 6일 토요일</h1>
+        <h1 class="h1h1">오후 5시 30분</h1>
+        <h1 class="h1h1">B4(1층) 클래식홀</h1>
+
+        <address>
+            부산광역시 남구 대연동 황령대로 401-9 (대연동 산24-3)<br>
+            Tel. 051-922-2210
+        </address>
+
+        <section>
+            <h2>지하철</h2>
+            <p>2호선 남천역 4번출구 > 셔틀버스 또는 도보이용 (20분)</p>
+        </section>
+
+        <section>
+            <h2>버스</h2>
+            <ul>
+                <li>대남교차로 & 남천역 하차 후 셔틀버스 또는 도보이용 (20분)</li>
+                <li>(20, 39, 40, 41, 42, 51, 83-1, 83, 108, 131, 155, 1001, 1003)</li>
+                <li>동원 보라아파트 하차(38,538) 도보이용 (8분)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>셔틀버스 운행정보</h2>
+            <p>남천역 4번출구 뚜레쥬르 빵집 앞 20분 간격</p>
+            <p>* 당일 도로 상황에 따라 늦어질 수 있으므로 양해 부탁드립니다.</p>
+        </section>
+
+        <section>
+            <h2>주차</h2>
+            <p>본건물 지상/타워 주차 이용</p>
+            <p>* 예식장 방면 도로가 많이 혼잡하므로 자가용 이용 시 참고 바랍니다.</p>
+            <p>* 도보 이용시 거리가 있어 자가용 또는 셔틀버스 추천드립니다.</p>
+        </section>
+    </div>
+</div>
+
+<%-include('./inc/footer.ejs') %>

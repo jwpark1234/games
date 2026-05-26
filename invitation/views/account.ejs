@@ -1,0 +1,68 @@
+<%-include('./inc/header.ejs') %>
+<style>
+    body {
+        font-size: 15px;
+        font-family: 'NanumSquareRound';
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .text {
+        margin: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block; /* Remove default inline-block spacing */
+        margin: 0 auto; /* Center the image */
+    }
+
+    section {
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        color: royalblue;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin-bottom: 5px;
+    }
+
+    .btn {
+        border: none;
+        background-color: white;
+    }
+    .btn>img {
+        width: 14px;
+        height: 16px;
+    }
+</style>
+
+<div class="container">
+    <div class="text">
+        <section>
+            <h2>마음 전하실 곳</h2>
+            <ul>
+                <li>신부측 : <span>이가람 (부산) 075120794432</span><button class="btn" onclick="javascript:copy(this);"><img src="copy.png" alt="복사"></button></li>
+                <li>신랑측 : <span>박지웅 (신한) 110209171440</span><button class="btn" onclick="javascript:copy(this);"><img src="copy.png" alt="복사"></button></li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+
+
+<%-include('./inc/footer.ejs') %>

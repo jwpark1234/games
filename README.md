@@ -5,4 +5,4 @@
 /invitation
 
 2. 미니게임 4종
-/minigames
+/game
